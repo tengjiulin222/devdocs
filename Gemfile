@@ -12,7 +12,7 @@ gem 'nokogiri'
 gem 'terminal-table'
 
 group :app do
-  gem 'rack'
+  gem 'rack', '>= 2.2.6.3'
   gem 'sinatra'
   gem 'sinatra-contrib'
   gem 'rack-ssl-enforcer'
