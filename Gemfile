@@ -4,7 +4,7 @@ ruby '~> 2.7.3'
 gem 'rake'
 gem 'thor'
 gem 'pry', '~> 0.14.0'
-gem 'activesupport', '~> 5.2', require: false
+gem 'activesupport', '~> 6.1', '>= 6.1.7.3', require: false
 gem 'yajl-ruby', require: false
 gem 'html-pipeline'
 gem 'typhoeus'
@@ -12,7 +12,7 @@ gem 'nokogiri'
 gem 'terminal-table'
 
 group :app do
-  gem 'rack'
+  gem 'rack', '>= 2.2.6.4'
   gem 'sinatra'
   gem 'sinatra-contrib'
   gem 'rack-ssl-enforcer'
