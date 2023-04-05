@@ -4,20 +4,20 @@ ruby '~> 2.7.3'
 gem 'rake'
 gem 'thor'
 gem 'pry', '~> 0.14.0'
-gem 'activesupport', '~> 5.2', require: false
+gem 'activesupport', '~> 6.1', '>= 6.1.7.3', require: false
 gem 'yajl-ruby', require: false
 gem 'html-pipeline'
 gem 'typhoeus'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.13.10'
 gem 'terminal-table'
 
 group :app do
-  gem 'rack'
-  gem 'sinatra'
-  gem 'sinatra-contrib'
+  gem 'rack', '>= 3.0.0'
+  gem 'sinatra', '>= 2.2.3'
+  gem 'sinatra-contrib', '>= 2.2.3'
   gem 'rack-ssl-enforcer'
   gem 'thin'
-  gem 'sprockets'
+  gem 'sprockets', '>= 4.2.0'
   gem 'sprockets-helpers'
   gem 'erubi'
   gem 'browser'
@@ -49,7 +49,7 @@ end
 group :test do
   gem 'minitest'
   gem 'rr', require: false
-  gem 'rack-test', require: false
+  gem 'rack-test', '>= 2.0.0', require: false
 end
 
 if ENV['SELENIUM'] == '1'
