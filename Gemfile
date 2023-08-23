@@ -4,9 +4,9 @@ ruby '~> 2.7.3'
 gem 'rake'
 gem 'thor'
 gem 'pry', '~> 0.14.0'
-gem 'activesupport', '~> 5.2', require: false
+gem 'activesupport', '~> 6.1', '>= 6.1.7.5', require: false
 gem 'yajl-ruby', require: false
-gem 'html-pipeline'
+gem 'html-pipeline', '>= 2.12.1'
 gem 'typhoeus'
 gem 'nokogiri'
 gem 'terminal-table'
