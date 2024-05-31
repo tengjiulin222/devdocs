@@ -6,9 +6,9 @@ gem 'thor'
 gem 'pry', '~> 0.14.0'
 gem 'activesupport', '~> 5.2', require: false
 gem 'yajl-ruby', require: false
-gem 'html-pipeline'
+gem 'html-pipeline', '>= 2.12.1'
 gem 'typhoeus'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.16.5'
 gem 'terminal-table'
 
 group :app do
