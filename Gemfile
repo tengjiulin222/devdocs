@@ -2,13 +2,13 @@ source 'https://rubygems.org'
 ruby '~> 2.7.3'
 
 gem 'rake'
-gem 'thor'
+gem 'thor', '>= 1.4.0'
 gem 'pry', '~> 0.14.0'
 gem 'activesupport', '~> 5.2', require: false
 gem 'yajl-ruby', require: false
 gem 'html-pipeline'
 gem 'typhoeus'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.18.9'
 gem 'terminal-table'
 
 group :app do
